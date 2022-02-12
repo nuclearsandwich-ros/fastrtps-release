@@ -1,0 +1,28 @@
+From 9ea46154df6ff609c1960956336c869df69d092d Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Steven!=20Ragnar=C3=B6k?=
+ <nuclearsandwich@users.noreply.github.com>
+Date: Sat, 12 Feb 2022 10:38:44 -0500
+Subject: [PATCH] Set CMake flags for Fast-RTPS.
+
+---
+ debian/rules.em | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/debian/rules.em b/debian/rules.em
+index 33424088..d56bb299 100755
+--- a/debian/rules.em
++++ b/debian/rules.em
+@@ -31,7 +31,9 @@ override_dh_auto_configure:
+ 	if [ -f "@(InstallationPrefix)/setup.sh" ]; then . "@(InstallationPrefix)/setup.sh"; fi && \
+ 	dh_auto_configure -- \
+ 		-DCMAKE_INSTALL_PREFIX="@(InstallationPrefix)" \
+-		-DCMAKE_PREFIX_PATH="@(InstallationPrefix)"
++		-DCMAKE_PREFIX_PATH="@(InstallationPrefix)" \
++		-DINSTALL_EXAMPLES=OFF \
++		-DSECURITY=ON
+ 
+ override_dh_auto_build:
+ 	# In case we're installing to a non-standard location, look for a setup.sh
+-- 
+2.35.1
+
