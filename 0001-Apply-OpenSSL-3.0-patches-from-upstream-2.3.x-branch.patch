@@ -1,4 +1,4 @@
-From 107fd79c7eb9f7770bce208dddfc2855c842f386 Mon Sep 17 00:00:00 2001
+From 5c11ccd951cf983ba459505396da1f722ed5570f Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Steven!=20Ragnar=C3=B6k?= <steven@nuclearsandwich.com>
 Date: Mon, 14 Feb 2022 20:15:59 -0800
 Subject: [PATCH] Apply OpenSSL 3.0 patches from upstream 2.3.x branch.
