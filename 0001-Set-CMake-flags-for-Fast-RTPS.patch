@@ -1,8 +1,8 @@
-From 03d2618e1b07dc4f0a015eadf91ddcf31f60c905 Mon Sep 17 00:00:00 2001
+From dbe9b09f0b14ebe84693af38e9e6292007178628 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Steven!=20Ragnar=C3=B6k?=
  <nuclearsandwich@users.noreply.github.com>
 Date: Sat, 12 Feb 2022 10:36:47 -0500
-Subject: [PATCH] Set CMake flags for Fast-RTPS.
+Subject: [PATCH 1/2] Set CMake flags for Fast-RTPS.
 
 Signed-off-by: Scott K Logan <logans@cottsay.net>
 
